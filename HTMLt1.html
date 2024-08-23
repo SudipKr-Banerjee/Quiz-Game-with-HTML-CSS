@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .button1 {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color:#F29B38 ;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+ .a{
+     display:"";
+ }
+
+ body {
+  background-image:url("bkimage4.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+
+ #test {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #FDF3C4;
+    margin-top: 20px;
+    display:none;
+}
+ #t1{
+     font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #CC0000;
+ }
+
+
+
+.button1 {
+  background-color: #F59700;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  display:none;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color:#F29B38 ;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+ .button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  display:none;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color:#F29B38 ;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  display:none;
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 20px;
+  color:#F29B38 ;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+
+}
+.button3:hover {
+  background-color:red;
+  color: white;
+  }
+.button3 {
+  background-color: #F59700;
+  color: black;
+  border: 2px solid #4CAF50;
+  display:none;
+}
+
+</style>
+<body>
+
+<script>
+
+var i=0;
+var marks=0;
+  var choice=1;
+
+  var k = 0;
+var txt = "";
+var txt1 = "";
+var txt2 = '';
+var txt3= '';
+var txt4= '';
+var s = 50;
+var j=0;
+    var h=0;
+    var h=1;
+    var h=2;
+    var h=3;
+    var k = 0;
+        var txt ='';
+        var s = 100;
+        var s1 = 100;
+        var s2 = 100;
+        var s3= 100;
+     var k1 = 0;
+     var k2 = 0;
+     var k3 = 0;
+     var k4 = 0;
+        var txt1 ='';
+        var s1 = 100;
+       var ques=[
+    "HTML is used to create?",
+    "How many heading tags are supported by HTML?",
+    "<a> tag in HTML",
+    "HTML is derived from"
+    ];
+
+var options1=[
+    "Web page",
+    "4",
+    "Defines a hyperlink",
+    "SGML"
+    ];
+var options2=[
+    "Web server",
+    "3",
+    "Alters a hyperlink",
+    "URL"
+    ];
+var options3=[
+    "Word document",
+    "6",
+    "Deletes a hyperlink",
+    "TCP/IP"
+    ];
+var options4=[
+    "Database",
+    "5",
+    "Accusesn a hyperlink",
+    "Browser"
+    ];
+
+
+    function typeWriter() {
+
+       //txt=ques[0];
+      // txt1=option[0];
+      // txt=ques[0];
+      // txt=ques[0];
+       //txt=ques[0];
+    if (k < txt.length) {
+        document.getElementById("xyz").innerHTML += txt.charAt(k);
+        //document.getElementById("a").innerHTML += txt.charAt(k);
+        k++;
+        setTimeout(typeWriter, s);
+    }
+    }
+    function typeWriter1() {
+
+
+    if (k1 < txt1.length) {
+       // document.getElementById("xyz").innerHTML += txt.charAt(k);
+        document.getElementById("a").innerHTML += txt1.charAt(k1);
+        k1++;
+        setTimeout(typeWriter1, s1);
+    }
+    }
+
+     function typeWriter2() {
+
+
+    if (k2 < txt2.length) {
+       // document.getElementById("xyz").innerHTML += txt.charAt(k);
+        document.getElementById("b").innerHTML += txt2.charAt(k2);
+        k2++;
+        setTimeout(typeWriter2, s2);
+    }
+    }
+
+     function typeWriter3() {
+
+
+    if (k3 < txt3.length) {
+       // document.getElementById("xyz").innerHTML += txt.charAt(k);
+        document.getElementById("c").innerHTML += txt3.charAt(k3);
+        k3++;
+        setTimeout(typeWriter3, s3);
+    }
+    }
+
+     function typeWriter4() {
+
+
+    if (k4 < txt4.length) {
+       // document.getElementById("xyz").innerHTML += txt.charAt(k);
+        document.getElementById("d").innerHTML += txt4.charAt(k4);
+        k4++;
+        setTimeout(typeWriter4, s4);
+    }
+    }
+function myFunction() {
+
+
+
+        document.getElementById('rdb1').checked=false;
+        document.getElementById('rdb2').checked=false;
+        document.getElementById('rdb3').checked=false;
+        document.getElementById('rdb4').checked=false;
+        document.getElementById("a").style.backgroundColor = "lightblue";
+        document.getElementById("b").style.backgroundColor = "lightblue";
+        document.getElementById("c").style.backgroundColor = "lightblue";
+        document.getElementById("d").style.backgroundColor = "lightblue";
+        document.getElementById("a").style.color = "#CC0000";
+        document.getElementById("b").style.color = "#CC0000";
+        document.getElementById("c").style.color = "#CC0000";
+        document.getElementById("d").style.color = "#CC0000";
+
+
+
+        if(i<4)
+        {
+            k=0;
+        document.getElementById("xyz").innerHTML= '';
+        txt=ques[i];
+        typeWriter();
+        k1=0;
+        document.getElementById("a").innerHTML= '';
+        k2=0;
+        document.getElementById("b").innerHTML= '';
+        k3=0;
+        document.getElementById("c").innerHTML= '';
+        k4=0;
+        document.getElementById("d").innerHTML= '';
+
+// txt1=options1[i];
+       // typeWriter1();
+
+        document.getElementById('rdb1').style.display='block';
+        document.getElementById('rdb2').style.display='block';
+        document.getElementById('rdb3').style.display='block';
+        document.getElementById('rdb4').style.display='block';
+
+        //document.getElementById("xyz").innerHTML=ques[i];
+        //document.getElementById("a").innerHTML=options1[i];
+        //document.getElementById("b").innerHTML=options2[i];
+        //document.getElementById("c").innerHTML=options3[i];
+        //document.getElementById("d").innerHTML=options4[i];
+        document.getElementById("blank").innerHTML="";
+        //document.getElementById("c").style.backgroundColor = "yellow";
+
+        }
+        if(i>3)
+        {
+
+        document.getElementById("xy").innerHTML="<font color='white'> Exam Over !<br> Your Score is "+marks+"</font>";
+        document.getElementById("xyz").innerHTML="You have successfully completed your exam. Once your marks are calculated, your results will be published at your centre.";
+        document.getElementById('rdb1').style.display="none";
+        document.getElementById('rdb2').style.display="none";
+        document.getElementById('rdb3').style.display="none";
+        document.getElementById('rdb4').style.display="none";
+
+        document.getElementById("a").innerHTML="";
+        document.getElementById("b").innerHTML="";
+        document.getElementById("c").innerHTML="";
+        document.getElementById("d").innerHTML="";
+        document.getElementById("a").style.backgroundColor = "lightblue";
+        document.getElementById("b").style.backgroundColor = "lightblue";
+        document.getElementById("c").style.backgroundColor = "lightblue";
+        document.getElementById("d").style.backgroundColor = "lightblue";
+        doc
+        document.getElementById("pqr").disabled = true;
+        document.getElementById("demo").innerHTML = "";
+        document.getElementById("result").innerHTML = "<FONT COLOR='WHITE' SIZE=5>YOU HAVE SCORED "+marks+"</FONT>";
+        z.style.display = "none";
+        document.getElementById("myProgress").innerHTML="";
+        document.getElementById("myBar").innerHTML="";
+        document.getElementById("frame").innerHTML="";
+        document.getElementById("blank").innerHTML="";
+        }
+
+         i=i+1;
+    }
+
+    function myFunctionop()
+    {
+        h=i-1;
+        document.getElementById("a").innerHTML= '';
+       txt1=options1[h];
+    typeWriter1();
+
+     document.getElementById("b").innerHTML= '';
+       txt2=options2[h];
+    typeWriter2();
+
+     document.getElementById("c").innerHTML= '';
+       txt3=options3[h];
+    typeWriter3();
+
+     document.getElementById("d").innerHTML= options4[h];
+   //    txt4=options4[h];
+    //typeWriter4();
+
+    }
+
+    function move() {
+        i=0;
+
+
+      var x = document.getElementById("next");
+      var y = document.getElementById("go");
+      var z= document.getElementById("test");
+      var v= document.getElementById("lc");
+      var q= document.getElementById("op");
+    var width = 100;
+
+        x.style.display = "inline-block";
+        v.style.display = "inline-block";
+        q.style.display = "inline-block";
+        y.style.display = "none";
+         z.style.display = "block";
+         txt=ques[i];
+    typeWriter();
+  //  txt1=options1[i];
+   // typeWriter1();
+
+         	document.getElementById('rdb1').checked=false;
+        document.getElementById('rdb2').checked=false;
+        document.getElementById('rdb3').checked=false;
+        document.getElementById('rdb4').checked=false;
+        document.getElementById("a").style.backgroundColor = "lightblue";
+        document.getElementById("b").style.backgroundColor = "lightblue";
+        document.getElementById("c").style.backgroundColor = "lightblue";
+        document.getElementById("d").style.backgroundColor = "lightblue";
+        	document.getElementById('rdb1').style.display='block';
+        document.getElementById('rdb2').style.display='block';
+        document.getElementById('rdb3').style.display='block';
+        document.getElementById('rdb4').style.display='block';
+
+       // document.getElementById("xyz").innerHTML=ques[i];
+       // document.getElementById("a").innerHTML=options1[i];
+      //  document.getElementById("b").innerHTML=options2[i];
+       // document.getElementById("c").innerHTML=options3[i];
+       // document.getElementById("d").innerHTML=options4[i];
+        document.getElementById("blank").innerHTML="";
+
+    i=i+1;
+  }
+  function myFunction1() {
+  var u = document.getElementById("myAudio");
+  var v = document.getElementById("myAudio1");
+  var x = document.getElementById("rdb1").checked;
+  var y = document.getElementById("rdb2").checked;
+  var z = document.getElementById("rdb3").checked;
+  var w = document.getElementById("rdb4").checked;
+  switch(choice)
+  {
+  case 1:
+  case 3:
+  case 4:
+
+  if (x==true)
+  {
+  document.getElementById("a").style.backgroundColor = "green";
+  document.getElementById("a").style.color = "white";
+
+
+    u.play();
+
+  marks=marks+1;
+  choice=choice+1;
+  }
+
+  if (z==true)
+  {
+  document.getElementById("c").style.backgroundColor = "red";
+  document.getElementById("c").style.color = "white";
+  v.play();
+  choice=choice+1;
+  }
+
+  if (y==true)
+  {
+  document.getElementById("b").style.backgroundColor = "red";
+  document.getElementById("b").style.color = "white";
+  v.play();
+  choice=choice+1;
+  }
+  if (w==true)
+  {
+  document.getElementById("d").style.backgroundColor = "red";
+  document.getElementById("d").style.color = "white";
+  v.play();
+  choice=choice+1;
+  }
+  break;
+  case 2:
+      if (x==true)
+  {
+  document.getElementById("a").style.backgroundColor = "red";
+  document.getElementById("a").style.color = "white";
+  v.play();
+   choice=choice+1;
+  }
+
+  if (z==true)
+  {
+  document.getElementById("c").style.backgroundColor = "green";
+  document.getElementById("c").style.color = "white";
+  marks=marks+1;
+  u.play();
+  choice=choice+1;
+  }
+
+  if (y==true)
+  {
+  document.getElementById("b").style.backgroundColor = "red";
+  document.getElementById("b").style.color = "white";
+  choice=choice+1;
+  v.play();
+  }
+  if (w==true)
+  {
+  document.getElementById("d").style.backgroundColor = "red";
+  document.getElementById("d").style.color = "white";
+  v.play();
+  choice=choice+1;
+  }
+  break;
+  }
+
+ // if (i>3)
+ // {
+
+  //}
+}
+    </script>
+    <br><br><br>
+    <style>
+        #rdb1 {
+            display:none;
+              }
+        #rdb2 {
+            display:none;
+              }
+        #rdb3 {
+            display:none;
+              }
+        #rdb4 {
+            display:none;
+              }
+    </style>
+    <audio id="myAudio">
+
+    <source src="clap.wav" type="audio/mpeg">
+
+</audio>
+<audio id="myAudio1">
+
+    <source src="lose.mpeg" type="audio/mpeg">
+
+</audio>
+      <div align="center">
+
+
+    <p id="blank"><font color="yellow" face="arial black" size=4>Click the Start Button to continue</p>
+</div>
+    <div align="center">
+    <p id="xyz" align="center"></p></font> </div>
+    <div align ="center">
+    <font size=15, font color="#008000"><b>
+    <p id="xy"></p></font>
+                   <p id="result"></p></font> </div>
+    <div align ="center" id="test">
+
+ <table id="t1">
+
+<tr>
+    <td style="padding:20px"><input type="radio" name=rd id="rdb1"></td> <td style="padding:20px" id="a" width="50%" height="75%"><font size=9></font></td>
+    <td style="padding:20px"><input type="radio" name=rd id="rdb2"></td> <td style="padding:20px" id="b" width="50%"><font size=7></font></td>
+</tr>
+<tr>
+    <td style="padding:20px"><input type="radio" name=rd id="rdb3"></td> <td style="padding:20px" id="c" width="50%"><font size=7></font></td>
+    <td style="padding:20px"><input type="radio" name=rd id="rdb4"></td> <td id="d" width="50%"><font size=7></font></td>
+</tr>
+
+ </table>
+    </div>
+
+
+<form id="info"></form>
+
+ <p id="demo"></p>
+    <br><br><br>
+    <div align="center">
+    <button class="button1" id="go" onclick="move()">Start</button>
+    <button class="button2" id="next" onclick="myFunction()">Next Question</button>
+    <button class="button3" id="lc" onclick="myFunction1()">LOCK</button>
+    <button class="button4" id="op" onclick="myFunctionop()">OPTIONS</button>
+    </div>
+
+    </body>
+    </html>

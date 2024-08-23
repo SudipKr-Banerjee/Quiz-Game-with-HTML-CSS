@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<style>
+body {
+  background-image:url("bkimage.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+img {
+  border-radius:50%;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #525252;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 32px;
+}
+
+li :hover {
+  background-color:black;
+}
+.blink {
+            animation: blinker 3s linear infinite;
+            color: red;
+            font-size: 2em;
+            /* Larger, responsive font size */
+            margin-bottom: 20px;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="fundamentalt1.htm ">FUNDAMENTAL</a></li>
+  <li><a href="cprogramt1.htm">C PROGRAMMING</a></li>
+  <li><a href="HTMLt1.htm">HTML</a></li>
+  <li><a href="pythonT1.htm">PYTHON</a></li>
+</ul>
+
+<div align="center">
+    <marquee behavior="alternate"><font color="white" face="arial black" size=7>WELCOME TO ABS ACADEMY DURGAPUR</font></marquee>
+    <p class="blink">
+  <img src="absphoto.jpg"  width="500" height="500" ></img>
+</div>
+</body>
+</html>
